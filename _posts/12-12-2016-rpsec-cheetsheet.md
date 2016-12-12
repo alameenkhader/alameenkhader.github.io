@@ -18,7 +18,7 @@ categories: Rails Rspec Matchers
 {% endhighlight %}
 
 ## Capybara
-select 'alameenkhader@gmail.com', from: 'email'
+`select 'alameenkhader@gmail.com', from: 'email'`
 
 #### References
 * [exception_notification] [exception-notification]
