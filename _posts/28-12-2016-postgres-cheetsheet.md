@@ -10,7 +10,6 @@ categories: Postgres
 
 ### pg_dump
 `PGPASSWORD=mypassword pg_dump -Fc --no-acl --no-owner -h localhost -U myuser mydb > mydb.dump`
-## Rspec
 
 #### References
 * [heroku] [Heroku]
