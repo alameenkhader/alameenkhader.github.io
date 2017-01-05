@@ -11,9 +11,10 @@ categories: Postgres
 ### pg_dump
 `PGPASSWORD=mypassword pg_dump -Fc --no-acl --no-owner -h localhost -U myuser mydb > mydb.dump`
 
-####Install the whole package      
+### Install package      
 `sudo apt-get install postgresql postgresql-contrib`
-####Install pgAdmin III - a handy GUI for PostgreSQL         
+
+#### Install pgAdmin III - a handy GUI for PostgreSQL         
 `sudo apt-get install pgadmin3`
   
 ####Setup            
