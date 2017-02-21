@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Rspec Cheat Sheet"
-date:   2016-07-14 02:44:26 +0530
+date:   2017-02-21 02:44:26 +0530
 categories: Rails Rspec 
 ---
 ### Arrays
