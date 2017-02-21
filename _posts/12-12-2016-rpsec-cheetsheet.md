@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rspec Built in Matchers"
+title:  "Rspec Cheat Sheet"
 date:   2016-07-14 02:44:26 +0530
 categories: Rails Rspec Matchers
 ---
