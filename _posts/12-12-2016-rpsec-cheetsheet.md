@@ -20,6 +20,11 @@ categories: Rails Rspec Matchers
 ## Capybara
 `select 'alameenkhader@gmail.com', from: 'email'`
 
+## Stub
+```
+allow(AssignDriverJob).to receive(:perform_later).and_return(true)
+```
+
 #### References
 * [exception_notification] [exception-notification]
 * [Rails ActiveJob] [rails-active-job]
