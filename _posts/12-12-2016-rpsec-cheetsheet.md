@@ -2,9 +2,8 @@
 layout: post
 title:  "Rspec Cheat Sheet"
 date:   2016-07-14 02:44:26 +0530
-categories: Rails Rspec Matchers
+categories: Rails Rspec 
 ---
-## Rspec
 ### Arrays
 ```
   describe Order do
@@ -17,20 +16,16 @@ categories: Rails Rspec Matchers
   end
 ```
 
-## Capybara
-`select 'alameenkhader@gmail.com', from: 'email'`
-
-## Stub
+## Stubbing
 ```
 allow(AssignDriverJob).to receive(:perform_later).and_return(true)
 ```
 
 ## Expect changes
-
-
-#### References
-* [exception_notification] [exception-notification]
-* [Rails ActiveJob] [rails-active-job]
-
-[exception-notification]: https://github.com/smartinez87/exception_notification
-[rails-active-job]: https://github.com/rails/rails/tree/master/activejob
+```
+# expect changes
+expect { Counter.increment }.to change { Counter.count }.from(0).to(1)
+# expect no changes
+expect { Counter.increment }.to_not change { Counter.count}.from(0).to(1)
+expect { Counter.increment }.to_not change { Counter.count}
+```
