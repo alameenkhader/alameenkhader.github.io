@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Postgres Cheetsheet"
-date:   2016-12-28 02:44:26 +0530
+title:  "Postgres Cheat Sheet"
+date:   2017-01-01 02:44:26 +0530
 categories: Postgres
 ---
 
