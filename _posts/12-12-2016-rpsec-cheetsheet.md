@@ -6,7 +6,7 @@ categories: Rails Rspec Matchers
 ---
 ## Rspec
 ### Arrays
-{% highlight ruby %}
+```
   describe Order do
     describe '.delivered' do
       let!(:delivered_orders) { create_list(:order, 3, delivered: true) }
@@ -15,7 +15,7 @@ categories: Rails Rspec Matchers
       it { expect(described_class.delivered).to match_array(delivered_orders) }
     end
   end
-{% endhighlight %}
+```
 
 ## Capybara
 `select 'alameenkhader@gmail.com', from: 'email'`
@@ -24,6 +24,9 @@ categories: Rails Rspec Matchers
 ```
 allow(AssignDriverJob).to receive(:perform_later).and_return(true)
 ```
+
+## Expect changes
+
 
 #### References
 * [exception_notification] [exception-notification]
