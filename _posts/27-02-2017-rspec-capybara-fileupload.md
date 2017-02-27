@@ -12,7 +12,9 @@ categories: rails
 FactoryGirl.define do
   factory :document do
     attachment_type do
-      Rack::Test::UploadedFile.new(Rails.root.join('spec', 'support', 'files', 'img.png'))
+      Rack::Test::UploadedFile.new(
+        Rails.root.join('spec', 'support', 'files', 'img.png')
+      )
     end
   end
 end
