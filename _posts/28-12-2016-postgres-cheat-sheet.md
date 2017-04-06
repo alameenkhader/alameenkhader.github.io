@@ -5,49 +5,49 @@ date:   2017-01-01 02:44:26 +0530
 categories: Postgres
 ---
 
-### pr_restore
+### PG Restore
 `pg_restore --verbose --clean --no-acl --no-owner -h localhost -U myuser -d mydb latest.dump`
 
-### pg_dump
+### PG Dump
 `PGPASSWORD=mypassword pg_dump -Fc --no-acl --no-owner -h localhost -U myuser mydb > mydb.dump`
 
-### Install package      
+### Install package
 `sudo apt-get install postgresql postgresql-contrib`
 
-#### Install pgAdmin III - a handy GUI for PostgreSQL         
+#### Install pgAdmin III - a handy GUI for PostgreSQL
 `sudo apt-get install pgadmin3`
-  
-####Setup            
-#####Login to postgres sql prompt          
-`sudo -u postgres psql postgres`         
-#####Change the postgres user password          
-`\password postgres`         
-#####Exit the posgreSQL prompt     
-`Control+D`          
-    
-###Basics     
-####Login as a different user               
-`psql -U <username> -h 127.0.0.1 <database-name>` 
-####Create a database         
-`sudo -u postgres createdb mydb`          
-Create a user         
-`CREATE USER <username> WITH PASSWORD '<password>';`        
-List all the users         
-`\du`       
-Grant a database to the user       
-`GRANT ALL PRIVILEGES ON DATABASE "<databasename>" to <username>;`       
-Drop database     
-`sudo -u postgres dropdb mydb`        
-Run the psql prompt to use the database mydb       
-`sudo -u postgres psql mydb`      
-List all the databases      
-`\list`        
+
+####Setup
+#####Login to postgres sql prompt
+`sudo -u postgres psql postgres`
+#####Change the postgres user password
+`\password postgres`
+#####Exit the posgreSQL prompt
+`Control+D`
+
+###Basics
+####Login as a different user
+`psql -U <username> -h 127.0.0.1 <database-name>`
+####Create a database
+`sudo -u postgres createdb mydb`
+Create a user
+`CREATE USER <username> WITH PASSWORD '<password>';`
+List all the users
+`\du`
+Grant a database to the user
+`GRANT ALL PRIVILEGES ON DATABASE "<databasename>" to <username>;`
+Drop database
+`sudo -u postgres dropdb mydb`
+Run the psql prompt to use the database mydb
+`sudo -u postgres psql mydb`
+List all the databases
+`\list`
 Switch databases
-`\connect <database-name>`           
-Create a table           
+`\connect <database-name>`
+Create a table
 ```
-    CREATE TABLE weather (          
-      city            varchar(80),        
+    CREATE TABLE weather (
+      city            varchar(80),
       temp_lo         int,           -- low temperature
       temp_hi         int,           -- high temperature
       prcp            real,          -- precipitation
@@ -60,10 +60,10 @@ List alll the database tables
 `\dt`
 Import Database dump
 `psql -U username -h localhost -d database_name < path/to/your/file.sql`
-     
+
 ## PG Restore
 `pg_restore -U postgres -d dbname filename`
-    
+
 #Trouble Shoot
 ##`FATAL:  Peer authentication failed for user "uuser"`
 1. vi /etc/postgresql/9.1/main/pg_hba.conf
@@ -86,14 +86,14 @@ Import Database dump
 # Database administrative login by Unix domain socket
 local   all             postgres                    ident
 ```
-The last word may be `ident`, `md5` or `all`, whatever change it to to `trust`          
+The last word may be `ident`, `md5` or `all`, whatever change it to to `trust`
 3. Restart `sudo /etc/init.d/postgres restart`
-4. 
+4.
 
 ## Upgrage from 9.3 to 9.4
 
 1. Package repo (for apt-get)
-```   
+```
 wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
 sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main" >> /etc/apt/sources.list.d/postgresql.list'
 ```
@@ -107,7 +107,7 @@ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ precise-pgdg main
 8. `sudo pg_dropcluster --stop 9.4 main`
 9. `sudo pg_createcluster 9.4 main`
 10. `sudo service postgresql restart 9.4`
-           
+
 References: https://medium.com/@tk512/upgrading-postgresql-from-9-3-to-9-4-on-ubuntu-14-04-lts-2b4ddcd26535#.othub6c58
             https://gist.github.com/tamoyal/2ea1fcdf99c819b4e07d#file-gistfile1-sh-L65
 
