@@ -1,7 +1,6 @@
 ---
 title:  Docker Commands
 layout: post
-categories: Docker
 author: alameenkhader
 author_email: alameenkhader@gmail.com
 ---
