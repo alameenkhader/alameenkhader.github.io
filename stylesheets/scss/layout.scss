@@ -26,8 +26,8 @@
 .l-colspan--l, .l-colspan--r {
   @extend %box-sizing;
   @media (min-width: 780px) {
-    width: 75%;
-    width: calc(100% - 240px);
+    width: 85%;
+    width: calc(100% - 100px);
   }
 }
 
@@ -50,8 +50,8 @@
 .l-col--l, .l-col--r {
   @extend %box-sizing;
   @media (min-width: 780px) {
-    width: 25%;
-    width: calc(240px);
+    width: 15%;
+    width: calc(100px);
   }
 }
 

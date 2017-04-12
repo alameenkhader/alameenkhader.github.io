@@ -117,8 +117,8 @@ pre {
 
 @media (min-width: 780px) {
   .l-colspan--l, .l-colspan--r {
-    width: 75%;
-    width: calc(100% - 240px); } }
+    width: 85%;
+    width: calc(100% - 100px); } }
 
 @media (min-width: 780px) {
   .l-colspan--l {
@@ -134,8 +134,8 @@ pre {
 
 @media (min-width: 780px) {
   .l-col--l, .l-col--l--pad, .l-col--r, .l-col--r--pad {
-    width: 25%;
-    width: calc(240px); } }
+    width: 15%;
+    width: calc(100px); } }
 
 @media (max-width: 779px) {
   .l-col--l, .l-col--l--pad {
@@ -1568,6 +1568,12 @@ a.page__heading {
 
 .img-logo {
   width: 45px;
+}
+
+.blog__post__image img, .blog__post__image .img-circle {
+  width: 12%;
+  float: left;
+  margin-right: 2%;
 }
 
 /*# sourceMappingURL=application.css.map */
