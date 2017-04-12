@@ -1,36 +1,58 @@
 ---
+title:  Docker Commands
 layout: post
-title:  "Docker Commands"
-date:   2017-03-08 02:44:26 +0530
 categories: Docker
+author: alameenkhader
+author_email: alameenkhader@gmail.com
 ---
-Remove a docker image
-sudo docker rmi  <IMAGE ID>
 
-Remove a docker container
-sudo docker rm <ID>
+### List all docker images
 
-Docker: remove all Exited containers
-sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+    sudo docker image ls
+    # OR
+    docker images
 
-List all images
-`sudo docker image ls` or `docker images`
+### Remove a docker image
 
-List all containers
-sudo docker container ls
+    sudo docker rmi  <IMAGE ID>
 
-sudo docker build -t demo .
-sudo docker run -it -p 4567:4567 demo
+### List all containers
 
-sudo chmod 757 -R .
+    sudo docker container ls
 
-docker-compose build
-docker-compose up
-docker-compose run web rake db:create
-docker ps
+### Remove a docker container
 
-## How to load with mysql dump
-sudo docker exec -i pizza-ranch-db mysql -uroot -ppassword -Dpizza_live --force < /home/alameen/Desktop/pizzaranch_feb22.sql
+    sudo docker rm <ID>
 
-## Docker copy/rename/tag an image
-sudo docker tag <IMAGE_Id> new_name_or_tag
+### Remove all Exited containers
+
+    sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+
+
+### How to load with mysql dump
+
+    sudo docker exec -i <container-name> mysql -uroot -ppassword -D<databasename> --force < /path/to/dump.sql
+
+    ## example:
+    ## sudo docker exec -i myblog-db mysql -uroot -ppassword -Dmyblog --force < /home/alameen/myblog.sql
+
+### How to copy/rename/tag an image
+
+    sudo docker tag <IMAGE_Id> <new_name_or_tag>
+
+    ##example:
+    ## sudo docker tag myblog-web latest
+
+## Troubleshoot
+
+
+Sometimes you may find it difficult to remove a container. Then manually remove the container would help
+
+    # stop docker
+    sudo /etc/init.d/docker stop
+    # list containers in your machine
+    sudo ls /var/lib/docker/containers
+    # Identify the container you want to remove
+    sudo rm -r /var/lib/docker/containers/<contaner-id>
+    # start docker
+    sudo /etc/init.d/docker start
