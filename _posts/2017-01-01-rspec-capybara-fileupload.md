@@ -5,7 +5,6 @@ author: alameenkhader
 author_email: alameenkhader@gmail.com
 date: 2017-01-01 02:44:26 +0530
 title_image: rspec.png
-comments: true
 ---
 
 Stack: Capybara, FactoryGirl
