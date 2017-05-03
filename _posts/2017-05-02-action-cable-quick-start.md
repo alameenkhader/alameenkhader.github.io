@@ -97,7 +97,7 @@ To mount Action Cable to our application, add `mount ActionCable.server => '/cab
       mount ActionCable.server => '/cable'
     end
 
-Add `stream_from "notifications_channel"` to the method `subscribed` of `app/channels/notification_channel.rb`
+Add `stream_from "notification_channel"` to the method `subscribed` of `app/channels/notification_channel.rb`
 
     # app/channels/notification_channel.rb
     class NotificationChannel < ApplicationCable::Channel
