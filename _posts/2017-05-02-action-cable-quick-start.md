@@ -7,8 +7,8 @@ date: 2017-05-02 02:44:26 +0530
 title_image: action-cable-quick-start.jpg
 ---
 
-We have been using ajax polling whenever we needed Real Time updates. Its time to switch to WebSockets.
-Action Cable is the major feature of Rails 5, you can easily work with websockets. This article demostrates the basic usage of ActionCable.
+We have been using ajax polling whenever we needed Real Time updates. Its time to switch to WebSockets. Using
+Action Cable, you can easily play with websockets in a Rails 5 application. This article demostrates the basic usage of ActionCable.
 
 ## Prerequisites
 
