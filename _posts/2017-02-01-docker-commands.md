@@ -20,6 +20,10 @@ title_image: docker-commands.png
 ### List all containers
 
     sudo docker container ls
+    
+### Stop all containers
+
+    docker stop $(docker ps -a -q)
 
 ### Remove a docker container
 
