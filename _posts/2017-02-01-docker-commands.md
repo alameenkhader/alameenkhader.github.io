@@ -20,7 +20,7 @@ title_image: docker-commands.png
 ### List all containers
 
     sudo docker container ls
-    
+
 ### Stop all containers
 
     docker stop $(docker ps -a -q)
@@ -32,6 +32,10 @@ title_image: docker-commands.png
 ### Remove all Exited containers
 
     sudo docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs sudo docker rm
+
+### Remove all orphan images
+
+    sudo docker rmi $(docker images --filter "dangling=true" -q --no-trunc)
 
 
 ### How to load with mysql dump
