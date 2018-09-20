@@ -1,10 +1,8 @@
 ---
 title: Action Cable - Quick Start
 layout: post
-author: alameenkhader
-author_email: alameenkhader@gmail.com
 date: 2017-05-02 02:44:26 +0530
-title_image: action-cable-quick-start.jpg
+description: We have been using ajax polling whenever we needed Real Time updates. Its time to switch to WebSockets.
 ---
 
 We have been using ajax polling whenever we needed Real Time updates. Its time to switch to WebSockets. Using
@@ -91,11 +89,12 @@ When the new rails app is created, get into the new directory
 ## Set up the channel - Server Side
 
 To mount Action Cable to our application, add `mount ActionCable.server => '/cable'` to `config/routes.rb`
-
-    Rails.application.routes.draw do
-      get 'notifications/index'
-      mount ActionCable.server => '/cable'
-    end
+~~~ ruby
+Rails.application.routes.draw do
+  get 'notifications/index'
+  mount ActionCable.server => '/cable'
+end
+~~~
 
 Add `stream_from "notification_channel"` to the method `subscribed` of `app/channels/notification_channel.rb`
 

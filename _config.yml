@@ -1,6 +1,25 @@
----
-exclude:
-- vendor
-safe: true
-markdown: kramdown
-url: http://alameenkhader.github.io/
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+# Plugins
+plugins: [jekyll-paginate]
+
+# Setup
+title:               alameenkhader.github.io
+tagline:             ''
+description:         ''
+baseurl:             ''
+paginate: 5
+paginate_path: "page:num"
+
+# About/contact
+author:
+  name:              Al Ameen
+  # url:               https://in.linkedin.com/in/al-ameen-khader-a8736452
+  email:             alameenkhader@gmail.com
+
+# Custom vars
+version: 1.0.0
