@@ -110,7 +110,7 @@ pre {
   overflow: auto; }
 
 .l-wrap--b {
-  max-width: 940px; }
+  max-width: 1200px; }
 
 .l-colspan {
   max-width: 640px; }
@@ -410,7 +410,7 @@ a.t-list__item {
     margin-top: 80px; }
 
 .blog__post {
-  padding-bottom: 36px;
+  padding-bottom: 75px;
   display: block;
   border-bottom: 1px solid #c1c4ca; }
   .blog__post:not(:first-child) {
@@ -1436,7 +1436,7 @@ main {
 
 .page__heading {
   margin-bottom: 30px;
-  border-bottom: 1px solid #c1c4ca; }
+}
   @media (max-width: 929px) {
     .page__heading {
       padding-top: 18px;
