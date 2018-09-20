@@ -1,10 +1,8 @@
 ---
 title:  Postgres in Docker
 layout: post
-author: alameenkhader
-author_email: alameenkhader@gmail.com
 date: 2017-04-01 02:44:26 +0530
-title_image: postgres-in-docker.jpg
+description: List of helpful commands when running postgres in docker
 ---
 
 ### DOCKER PG_DUMP

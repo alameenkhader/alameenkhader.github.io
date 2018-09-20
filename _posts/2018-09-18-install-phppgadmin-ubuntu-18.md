@@ -1,10 +1,8 @@
 ---
 title: How to install phpPgAdmin - ubuntu 18.04
 layout: post
-author: alameenkhader
-author_email: alameenkhader@gmail.com
 date: 2018-09-18 02:44:26 +0530
-title_image: phppgadmin.png
+description: phpPgAdmin is one of the best Postgres GUI tools. This artilcle explains how to install phpPgAdmin in Ubuntu 18.04.
 ---
 
 phpPgAdmin is one of the best Postgres GUI tools. This artilcle explains how to install phpPgAdmin in Ubuntu 18.04.
@@ -34,13 +32,13 @@ Lets check the installation
 
     sudo apt-get install php-pgsql phppgadmin
 
-Lets check the installation, go to `localhost/phppgadmin` ![localhost/phppgadmin](/images/posts/phppgadmin-installed.png)
+Lets check the installation, go to `localhost/phppgadmin` ![localhost/phppgadmin](/public//images/posts/phppgadmin-installed.png)
 
 ## Trobleshoot
 
 1. `Login disallowed for security reasons.`
 
-![Login disallowed for security reasons](/images/posts/phppgadmin-login-disabled.png)
+![Login disallowed for security reasons](/public/images/posts/phppgadmin-login-disabled.png)
 
    Open phpgadmin config file
 

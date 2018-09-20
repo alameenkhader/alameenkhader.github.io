@@ -1,10 +1,8 @@
 ---
 title:  Docker Commands
 layout: post
-author: alameenkhader
-author_email: alameenkhader@gmail.com
 date: 2017-02-01 02:44:26 +0530
-title_image: docker-commands.png
+description: List of docker commands
 ---
 
 ### List all docker images
