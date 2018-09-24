@@ -1,10 +1,10 @@
 ---
-title:  Rspec - File Upload
-layout: post
-author: alameenkhader
+title:        Rspec - File Upload
+layout:       post
+author:       alameenkhader
 author_email: alameenkhader@gmail.com
-date: 2017-01-01 02:44:26 +0530
-title_image: rspec.png
+date:         2017-01-01 02:44:26 +0530
+title_image:  rspec.png
 ---
 
 Stack: Capybara, FactoryGirl
