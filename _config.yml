@@ -5,21 +5,22 @@ permalink:           pretty
 # relative_permalinks: true
 
 # Plugins
-plugins: [jekyll-paginate]
+plugins:             [jekyll-paginate, jekyll-seo-tag]
 
 # Setup
 title:               alameenkhader.github.io
-tagline:             ''
 description:         ''
+url:                 alameenkhader.github.io
+tagline:             ''
 baseurl:             ''
-paginate: 5
-paginate_path: "page:num"
+paginate:            5
+paginate_path:       "page:num"
 
 # About/contact
 author:
   name:              Al Ameen
-  # url:               https://in.linkedin.com/in/al-ameen-khader-a8736452
+  url:               http://in.linkedin.com/in/al-ameen-khader-a8736452
   email:             alameenkhader@gmail.com
 
 # Custom vars
-version: 1.0.0
+version:             1.0.0
