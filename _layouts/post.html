@@ -8,6 +8,10 @@ layout: default
   {{ content }}
 </div>
 
+{% if page.githubIssueId %}
+Visit the <b><a href="https://github.com/alameenkhader/alameenkhader.github.io/issues/{{ page.githubIssueId }}" target="_blank">Github Issue</a></b> to comment on this post
+{% endif %}
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
