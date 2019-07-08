@@ -3,7 +3,6 @@ title: How to install phpPgAdmin - ubuntu 18.04
 layout: post
 date: 2018-09-18 02:44:26 +0530
 description: phpPgAdmin is one of the best Postgres GUI tools. This artilcle explains how to install phpPgAdmin in Ubuntu 18.04.
-githubIssueId: 5
 ---
 
 phpPgAdmin is one of the best Postgres GUI tools. This artilcle explains how to install phpPgAdmin in Ubuntu 18.04.

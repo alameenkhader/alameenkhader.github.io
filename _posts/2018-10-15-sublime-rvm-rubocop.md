@@ -3,7 +3,6 @@ title: Trouble setting up rubocop with Sublime
 layout: post
 date: 2018-10-15 02:44:26 +0530
 description: Rubocop sublime not working?
-githubIssueId: 6
 ---
 
 Using Sublime Text 3, RVM and want to set up robocop?
