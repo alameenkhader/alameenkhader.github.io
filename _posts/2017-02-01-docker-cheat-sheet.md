@@ -1,5 +1,5 @@
 ---
-title:  Docker Commands
+title:  Docker Cheat Sheet
 layout: post
 date: 2017-02-01 02:44:26 +0530
 description: List of docker commands
