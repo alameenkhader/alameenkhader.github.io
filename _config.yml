@@ -13,7 +13,7 @@ description:         ''
 url:                 alameenkhader.github.io
 tagline:             ''
 baseurl:             ''
-paginate:            5
+paginate:            20
 paginate_path:       "page:num"
 
 # About/contact
