@@ -245,7 +245,8 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-seo-tag
+  jekyll-sitemap
   rake
 
 BUNDLED WITH
-   1.16.4
+   1.17.2

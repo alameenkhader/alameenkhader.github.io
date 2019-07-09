@@ -5,7 +5,7 @@ permalink:           /:title/
 # relative_permalinks: true
 
 # Plugins
-plugins:             [jekyll-paginate, jekyll-seo-tag]
+plugins:             [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 
 # Setup
 title:               alameenkhader.github.io
