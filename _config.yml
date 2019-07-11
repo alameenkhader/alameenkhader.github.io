@@ -10,7 +10,7 @@ plugins:             [jekyll-paginate, jekyll-seo-tag, jekyll-sitemap]
 # Setup
 title:               alameenkhader.github.io
 description:         ''
-url:                 alameenkhader.github.io
+url:                 http://alameenkhader.github.io
 tagline:             ''
 baseurl:             ''
 paginate:            20
